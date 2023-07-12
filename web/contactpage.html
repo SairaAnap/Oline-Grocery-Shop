@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grocery || Contact</title>
+    <link rel="stylesheet" href="../style/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar-1">
+            <div class="container">
+                <div class="logo"><i class="fas fa-shopping-basket"></i>grocery</div>
+                <div class="search"><input type="search" name="" id="" placeholder="Search grocery.."><i
+                        class="fas fa-search"></i></div>
+            </div>
+        </div>
+        <div class="nav-bar-2">
+            <ul class="nav">
+                <li onclick="window.location='project.html'">Home</li>
+                <li onclick="window.location='categorypage.html'">Category</li>
+                <li onclick="window.location='aboutpage.html'">about us</li>
+                <li onclick="window.location='contactpage.html'">Contact Us</li>
+            </ul>
+            <div class="icons">
+                <li><i class="fas fa-cart-arrow-down"></i></li>
+                <li><i class="  fas fa-heart"></i></li>
+                <li><i class="fas fa-user"></i></li>
+            </div>
+        </div>
+    </header>
+
+    <div class="contact">
+        <div class="container8">
+            <div class="title">
+                <h2>Contact <span style="color: rgb(28, 230, 93)">Us</span></h2>
+            </div>
+            <div class="field">
+                <div class="content">
+                    <h2>
+                        get in touch
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, id.
+                    </p>
+                    <div class="info">
+
+                        <li><i class="fas fa-map-marker-alt"></i><span>Address:</span> karve nagar, pune.</li>
+                        <li><i class="fas fa-at"></i><span>Email-Id:</span> grosary@example.com</li>
+                        <li><i class="fas fa-phone-alt"></i><span>Phone:</span> (0741)-32146541</li>
+                        <li><i class="fas fa-mobile-alt"></i><span>mobile:</span> +91 98741-98542</li>
+                    </div>
+                </div>
+                <div class="form">
+                    <h2>Contact <span style="color:rgb(28, 230, 93)"> US</span></h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    </p>
+                    <form action="" name="myform" onsubmit="return validatecontact()">
+                        <div class="form-group">
+                            <label for="">Full Name</label>
+                            <input type="text" id="username" placeholder="name"><span id="e1"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Email-Id</label>
+                            <input type="email" id="email" placeholder="email"><span id="e2"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Subject</label>
+                            <input type="text" id="subject" placeholder="Subject"><span id="e3 "></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Message</label>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="message"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Send Message">
+                        </div>
+                        <script>
+                            var username = document.getElementById("username");
+                            var email = document.getElementById("email");
+                            var subject = document.getElementById("subject");
+                        
+                            let flag = 1;
+
+                            function validatecontact() {
+                                if (username.value == "" || username.value == null) {
+                                    document.getElementById("e1").innerHTML = "name can't be blank";
+                                    document.getElementById("e1").style.color = "red";
+                                    document.getElementById("username").style.border = "2px solid red";
+                                    flag = 0;
+
+
+                                } else if (username.value.length < 3) {
+                                    document.getElementById("e1").innerHTML = "Username require minimum 3 charecter"
+                                    document.getElementById("e1").style.color = "red";
+                                    document.getElementById("e1").style.border = "red";
+                                    flag = 0;
+
+                                }
+                                else {
+
+                                    document.getElementById("e1").innerHTML = "";
+                                    document.getElementById("username").style.border = "none";
+                                    flag = 1;
+
+                                }
+                                if (email.value == "" || email.value == null) {
+                                    document.getElementById("e2").innerHTML = "enter email";
+                                    document.getElementById("e2").style.color = "red";
+                                    document.getElementById("email").style.border = "2px solid red";
+                                    flag = 0;
+                                } else {
+                                    document.getElementById("e2").innerHTML = "";
+                                    document.getElementById("email").style.border = "none";
+                                    flag = 1;
+                                }
+
+                                // if (subject.value == "" || subject.value == null) {
+                                //     document.getElementById("e3").innerHTML = "+";
+                                //     document.getElementById("e3").style.color = "red";
+                                //     document.getElementById("subject").style.border = "2px solid red";
+                                //     flag = 0;
+                                // } else {
+                                //     document.getElementById("e3").innerHTML = "";
+                                //     document.getElementById("subject").style.border = "none";
+                                //     flag = 1;
+                                // }
+
+                                if (flag) {
+                                    return true;
+                                } else {
+                                    return false;
+                                }
+
+                            }
+
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- embeded a map -->
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15132.959978981366!2d73.84991235!3d18.5180538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2sin!4v1677131171331!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- slogan -->
+    <div class="slogan">
+        <div class="container6">
+            <div class="msg">
+                <h2>Feed your family the best</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatibus possimus maiores
+                    quibusdam aliquid et.</p>
+                <a href="" class="btn" style="display: inline-block;">Contact Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container6">
+            <div class="field" style="flex-wrap: wrap;">
+                <div class="des">
+                    <div class="logo"><i class="fas fa-shopping-basket"></i>grocery</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio aperiam
+                        consequuntur!</p>
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="category">
+                    <h2>best category</h2>
+                    <li>vegetables</li>
+                    <li>fruits</li>
+                    <li>meats</li>
+                    <li>juice</li>
+                </div>
+                <div class="links">
+                    <h2>important links</h2>
+                    <li>home</li>
+                    <li>category</li>
+                    <li>products</li>
+                    <li>contact</li>
+                </div>
+                <div class="contact">
+                    <h2>contact us</h2>
+                    <li><span>Address:</span> shivaji nagar, pune.</li>
+                    <li><span>Email-Id:</span> grosary@example.com</li>
+                    <li><span>Phone:</span> (0741)-32146541</li>
+                    <li><span>mobile:</span> +91 98741-98542</li>
+                </div>
+            </div>
+
+            <div class="copy">
+                <hr>
+                created by <span>Saira Anap</span> | All right reserved.!
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

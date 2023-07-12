@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery || About Us</title>
+    <link rel="stylesheet" href="../style/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="main-div">
+
+        <header>
+            <div class="nav-bar-1">
+                <div class="container">
+                    <div class="logo"><i class="fas fa-shopping-basket"></i>grocery</div>
+                    <div class="search"><input type="search" name="" id="" placeholder="Search grocery.."><i
+                            class="fas fa-search"></i></div>
+                </div>
+            </div>
+            <div class="nav-bar-2">
+                <ul class="nav">
+                    <li onclick="window.location='project.html'">Home</li>
+                    <li onclick="window.location='categorypage.html'">Category</li>
+                    <li onclick="window.location='aboutpage.html'">about us</li>
+                    <li onclick="window.location='contactpage.html'">Contact Us</li>
+                </ul>
+                <div class="icons">
+                    <li><i class="fas fa-cart-arrow-down"></i></li>
+                    <li><i class="  fas fa-heart"></i></li>
+                    <li><i class="fas fa-user"></i></li>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- home page  start-->
+        <div class="home">
+
+            <div class="container2">
+                <div class="content1">
+
+
+                    <h1> About <span style="color:rgb(28, 230, 93);">US</span></h1>
+                    </h1>
+                    <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Inventore est qui voluptate enim a <br> vel rem odit omnis quisquam voluptates Lorem ipsum
+                        dolor, sit amet consectetur adipisicing elit. Impedit magnam cum nobis quia perspiciatis
+                        dolores, rem quae quos voluptatem, eveniet, similique veniam necessitatibus explicabo optio
+                        eaque ullam delectus animi ratione.</p>
+
+                    <p id="readmore"></p>
+
+                    <button onclick="display()"> Read more</button>
+
+                </div>
+                <script>
+                    function display() {
+                        document.getElementById("readmore").innerHTML = "dolor, sit amet consectetur adipisicing elit. Impedit magnam cum nobis quia perspiciatis "
+                        document.getElementById("readmore").style.fontSize = "18px "
+
+                    }
+                    
+                </script>
+
+            </div>
+            <!-- cart img -->
+            <div class="content2">
+                <img src="../images/pngegg (1).png" alt="cart.img">
+            </div>
+
+        </div>
+
+
+        <div class="slogan">
+            <div class="container6">
+                <div class="content">
+                    <h2> Feed your family the best</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, quo?
+                    </p>
+                    <button> Contact Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="container6">
+                <div class="field" style="flex-wrap: wrap;">
+                    <div class="des">
+                        <div class="logo"><i class="fas fa-shopping-basket"></i>grocery</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio aperiam
+                            consequuntur!</p>
+                        <div class="social">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <h2>best category</h2>
+                        <li>vegetables</li>
+                        <li>fruits</li>
+                        <li>meats</li>
+                        <li>juice</li>
+                    </div>
+                    <div class="links">
+                        <h2>important links</h2>
+                        <li>home</li>
+                        <li>category</li>
+                        <li>products</li>
+                        <li>contact</li>
+                    </div>
+                    <div class="contact">
+                        <h2>contact us</h2>
+                        <li><span>Address:</span> shivaji nagar, pune.</li>
+                        <li><span>Email-Id:</span> grosary@example.com</li>
+                        <li><span>Phone:</span> (0741)-32146541</li>
+                        <li><span>mobile:</span> +91 98741-98542</li>
+                    </div>
+                </div>
+
+                <div class="copy">
+                    <hr>
+                    created by <span>Saira Anap</span> | All right reserved.!
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
